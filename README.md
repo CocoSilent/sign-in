@@ -29,10 +29,12 @@
 	--name jd \
 	--hostname jd \
 	--restart always \
-	noobx/jd:gitee
+	nextgods/sign-in:latest
 ```
 如需指定目录，请把$PWD更改为指定目录即可，不然则为当前目录!!
 执行上面命令之后建议执行docker logs -f jd查看安装进度，直到出现Welcome to Node.js v1x.x.0.代表成功！
+
+等待数分钟后，即可访问 http://{ip}:3547/
 
 
 
