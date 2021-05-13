@@ -617,6 +617,6 @@ app.get('/api/logs/:dir/:file', function (request, response) {
 
 checkConfigFile()
 
-app.listen(5678, () => {
-    console.log('应用正在监听 5678 端口!');
+app.listen(3547, () => {
+    console.log('应用正在监听 3547 端口!');
 });

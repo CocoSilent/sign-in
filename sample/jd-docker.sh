@@ -25,7 +25,7 @@ CONFIG_PATH=""
 LOG_PATH=""
 TAG="gitee"
 NETWORK="host"
-JD_PORT=5678
+JD_PORT=3547
 
 HAS_IMAGE=false
 EXT_SCRIPT=false
@@ -154,11 +154,11 @@ if [ "$net" = "2" ]; then
 fi
 
 if [ "$NETWORK" = "bridge" ]; then
-    echo -n -e "\e[36m输入自定义的映射端口[默认为：5678]->\e[0m"
+    echo -n -e "\e[36m输入自定义的映射端口[默认为：3547]->\e[0m"
     read jd_port
     JD_PORT=$jd_port
     if [ -z "$jd_port" ]; then
-        JD_PORT=5678
+        JD_PORT=3547
     fi
 fi
 
@@ -191,7 +191,7 @@ if [ "$EXT_SCRIPT" = true ]; then
 fi
 
 if [ "$NETWORK" = "bridge" ]; then
-    MAPPING_PORT="-p $JD_PORT:5678"
+    MAPPING_PORT="-p $JD_PORT:3547"
 fi
 
 log "3.开始创建容器并执行"
@@ -225,4 +225,4 @@ if [ ! -f "$CONFIG_PATH/config.sh" ]; then
 log "4.下面列出所有容器"
 docker ps
 
-log "5.安装已经完成。\n现在你可以访问设备的 ip:5678 用户名：admin  密码：adminadmin  来添加cookie，和其他操作。感谢使用！"
+log "5.安装已经完成。\n现在你可以访问设备的 ip:3547 用户名：admin  密码：adminadmin  来添加cookie，和其他操作。感谢使用！"
