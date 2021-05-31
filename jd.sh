@@ -117,7 +117,7 @@ function Combin_All {
     #城城领现金(jd_city.js)
   export CITY_SHARECODES=$(Combin_Sub ForOtherCity "VNy0l6_1GFbmIOzHW5h_1k1H_BNo3s-mVdCxzI2luC32@RtGKzeT3QALxLdKcFdNm1zTsoCfYds5iBJKXw0quAzQKvH6tsA@QMyKkLX_EEj6OdzWW5gzmmvH5PtiKTrbMXHrZ-VTRm4")
   #手机狂欢城(jd_carnivalcity.js)
-  export JD818_SHARECODES=$(Combin_Sub ForOtherCarni "8b85c387-561f-4df6-87ee-2023c5ee075c@be19ecbf-6b4c-4ece-856b-b38938774b3b@07741755-758a-4f07-bca7-96dbb4b5a556@2f4aaab3-32c0-47ec-90a6-4aa5f5aa339d")
+  export JD818_SHARECODES=$(Combin_Sub ForOtherCarni "2ad4df7a-b55c-469f-bc29-ba81722f82b3@2fc79002-18eb-4ed0-9b5d-99d9daa85dbf@07741755-758a-4f07-bca7-96dbb4b5a556@2f4aaab3-32c0-47ec-90a6-4aa5f5aa339d")
   
 }
 
